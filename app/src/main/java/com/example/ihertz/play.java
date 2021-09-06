@@ -74,6 +74,7 @@ public class play extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.ic_baseline_music_note_24);
             }
 
+
         seekBar.setMax(mediaPlayer.getDuration());
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {

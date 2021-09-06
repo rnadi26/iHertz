@@ -16,6 +16,7 @@
         android:scrollHorizontally="true"
         android:singleLine="true"
         android:text="TextView"
+        android:textColor="@color/customnote"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,7 +48,7 @@
 
         <ImageView
             android:id="@+id/play"
-            android:layout_width="142dp"
+            android:layout_width="173dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_baseline_pause_circle_filled_24" />
@@ -62,25 +63,28 @@
 
     <SeekBar
         android:id="@+id/seekBar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="365dp"
+        android:layout_height="40dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="24dp"
+        android:progressTint="@color/customnote"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintVertical_bias="0.521"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="317dp"
-        android:layout_height="319dp"
+        android:layout_width="366dp"
+        android:layout_height="364dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317"
+        app:layout_constraintVertical_bias="0.659"
         app:srcCompat="@drawable/ic_baseline_music_note_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
